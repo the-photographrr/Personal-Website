@@ -849,6 +849,11 @@ footer{
                 
                 
                 }
+                 @media (max-width:372px){
+                    section.profile .right ul.contact{
+                        width: max-content;
+                    }
+                    }
 
                 @media (max-width:384px){
                     
@@ -858,6 +863,14 @@ footer{
                             
                         }
                     }
+
+                 @media (max-width:342px){
+                    
+                        section.profile .left h2{
+                            font-size:17px ;
+                        }
+                            
+                        }
 
                     @media (max-width:353px){
                         section.profile .left h2{
@@ -871,13 +884,38 @@ footer{
                        
                         }
 
+                       @media (max-width:338px){
+                            section.profile .left h2{
+                                font-size:16px ;
+                            }
+                        }
+
+                        @media (max-width:323px){
+                            section.profile .right ul.contact{
+                               width: auto;
+                                
+                            }
+                            section.profile .left h2{
+                                font-size: 16px;
+                            }
+                            
+                            }
+
+                            @media (max-width:320px){
+                                section.profile .right ul.contact{
+                                    width: max-content;
+                                     
+                                 } 
+                            }
+
+
                         @media (max-width:317px){
                             section.profile .left h2{
                                 font-size:16px ;
                             }
                             section.profile .left img{
-                                width: 118px;
-                                height: 118px;
+                                width: 116px;
+                                height: 116px;
                                 border-radius: 50%;
                                 object-fit: cover;
                             }
@@ -903,6 +941,13 @@ footer{
                                  line-height: 2rem;
                                   
                               }
+                            section.skills .skills-wrapper .skill-box .progress-wrap .progress-bar .tooltip{
+                                  right: -64px;
+                              }
+                              section.profile .right ul.contact{
+                                width: auto;
+                                 
+                             } 
                             
                         }
               
