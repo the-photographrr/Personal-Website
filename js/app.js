@@ -70,3 +70,32 @@ $(document).ready(function(){
 
 
 });
+
+//print//
+
+$( document ).ready(function() {
+  $('#Print').click(function()
+   {
+       window.print();
+   });
+});
+
+//contact form//
+
+$("#submit-form").submit((e)=>{
+  e.preventDefault()
+  $.ajax({
+      url:"https://script.google.com/macros/s/AKfycbzpHB099VqyGJfHbQhL02wmvSldX8X0AcfYGaGv/exec",
+      data:$("#submit-form").serialize(),
+      method:"post",
+      success:function (response){
+          alert("Form submitted successfully")
+          window.location.reload()
+          //window.location.href="https://google.com"
+      },
+      error:function (err){
+          alert("Something Error")
+
+      }
+  })
+})
